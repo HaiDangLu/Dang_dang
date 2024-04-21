@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>BaiThucHanhTiet79</title>
+    <link rel="stylesheet" href="la.css">
+</head>
+<style>
+/* Basic styles for the layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+/* Header styling */
+.banner {
+    background-color: #a0c5de;
+    color: rgb(27, 21, 131);
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Dropdown menu styling */
+.dropdown * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ #nav {
+    display: block;
+    background-color: #000;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    line-height: 46.5px;
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    min-width: 160px;
+    line-height: 38px;
+}
+
+/* Layout for main content area */
+aside {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+section {
+    flex: 2;
+    padding: 20px;
+}
+
+article {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Changes flex direction for smaller screens */
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        display: none; /* Initially hides the menu for smaller screens */
+        flex-direction: column; /* Stacks menu items vertically */
+    }
+
+    nav ul.open {
+        display: block; /* Shows the menu when needed */
+    }
+
+    /* Handle dropdowns for smaller screens */
+    .dropdown {
+        position: relative; /* Allows dropdown to position correctly */
+        top: auto;
+        left: auto;
+    }
+
+    aside {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+.img{
+    max-width: 100%;
+    height: auto;
+}
+</style>
+
+<body>
+    <!-- Header with a banner -->
+    <header>
+        <div class="banner">
+          <h1>BỘ CÔNG THƯƠNG
+            <br>ĐẠI HỌC CÔNG NGHIỆP TP. HỒ CHÍ MINH</h1>
+          <h2> <span style="color:  rgba(255, 0, 0, 0.871);"> Đổi mới tư duy, làm giàu thêm tri thức - đời sống</span></h2>
+        </div>
+      </header>
+
+    <!-- dropdown menu -->
+    <div>
+        <ul id="nav">
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Đào tạo</a>
+                <ul class="subnav">
+                    <li><a href="#">Đồ họa</a></li>
+                    <li><a href="#">Web</a></li>
+                    <li><a href="#">Mạng</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Nghiên cứu</a></li>
+            <li><a href="#">Sinh viên</a></li>
+            <li><a href="#">Giảng viên</a></li>
+            <li><a href="#">Văn bằng</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content area with an article on the right and aside on the left -->
+    <main>
+        <div class="container">
+            <!-- Aside (sidebar) on the left -->
+            <aside>
+                <h2>TUYỂN SINH</h2>
+                <li>Thông báo tuyển sinh bậc Đại học hệ chính quy năm 2024</li>   
+                <li>Thông báo tuyển sinh đào tạo liên thông từ trình độ cao đẳng lên trình độ đại học đợt 1- năm 2024</li>   
+            
+                           
+            </aside>
+
+            <!-- Main content with an article on the right -->
+            <section>
+                <article>
+                    <h2>Triết lý giáo dục của trường Đại học Công Nghiệp TP.HCM</h2>
+                    <p>
+                        Nhà trường hướng đến đào tạo người học trở thành những người có đầy đủ phẩm chất CARE, phù hợp với tầm nhìn, sứ mạng và giá trị cốt lõi của Trường. Những phẩm chất của người học mà Trường Đại học Công nghiệp Thành phố Hồ Chí Minh mong muốn người học đạt được trong quá trình tham gia học tập tại Trường.
+                    <ul>
+                        <li>Compassionate Leader - một nhà lãnh đạo nhạy bén</li>
+                        <li>Avid Lifelong Learner - một người không ngừng học tập tích cực</li>
+                        <li>Rational Thinker - một người có suy nghĩ thấu đáo, hợp lý</li>
+                        <li>Enterprising Innovator - một nhà cải cách trong hoạt động kinh doanh</li>
+
+                    </ul>
+                    Triết lý giáo dục của Trường Đại học Công nghiệp Thành phố Hồ Chí Minh nhằm mục đích bồi dưỡng người học có được các phẩm chất CARE, chuẩn bị cho người học hành trang bước vào cuộc sống và thế giới việc làm trong tương lai.
+                </p>
+                <p>
+                    Chuyển đổi tư duy, làm giàu cho đời sống tri thức - kinh tế và hoạt động nghề nghiệp thông qua các dịch vụ cộng đồng và đóng góp cho xã hội cũng như nền kinh tế thông qua nghiên cứu ứng dụng và chuyển giao công nghệ vì một nền kinh tế bền vững với mức sống cao hơn.
+
+<br>Trích từ Quyết định số 966/QĐ-ĐHCN ngày 20/7/2021 của Hiệu trưởng Trường Đại học Công nghiệp Thành phố Hồ Chí Minh
+
+<br>Phiên bản Tiếng Anh (English version)
+                </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <main>
+        <div class="container">
+            <!-- Aside (sidebar) on the left -->
+            <aside>
+                <h2>THÔNG BÁO</h2>
+                <li>Thông báo v/v đăng ký học phần và đóng học phí học kỳ III năm học 2023 - 2024 </li>   
+                <li>Thông báo v/v sinh viên đăng ký học trước một số học phần của chương trình đào tạo trình độ Thạc sĩ</li>      
+                <li>V/v Nghỉ lễ Giỗ tổ Hùng Vương (10/3 âm lịch), Ngày Giải phóng miền Nam (30/4) và Ngày Quốc tế lao động (01/05) năm 2024</li>     
+            </aside>
+
+            <!-- Main content with an article on the right -->
+            <section>
+                <article>
+                    <h2>Giá trị cốt lõi</h2>
+                    <p> 
+                        Với mục tiêu và tầm nhìn trở thành Trường đại học hàng đầu của Việt Nam, tiên phong trong lĩnh vực giáo dục và nghiên cứu ứng dụng, chuyển giao công nghệ và đổi mới sáng tạo; giá trị cốt lõi Trường Đại học Công nghiệp Thành phố Hồ Chí Minh được đúc kết: “Đổi mới - Đoàn kết - Nhân văn”.
+                        <li>Đổi mới: liên tục tìm kiếm những cách làm mới và tốt hơn, sáng tạo, đổi mới và dám nghĩ, dám làm để thử những điều mới và tạo cơ hội để cải tiến và đạt đến tầm cao mới.</li>
+                        <li>Đoàn kết: chịu trách nhiệm và làm chủ, đồng thời phối hợp làm việc với tất cả các đơn vị và các bên liên quan để khai thác triệt để các nguồn lực và năng lực cũng như sử dụng và triển khai hiệu quả chúng.</li>
+                        <li>Nhân văn: đối xử với từng cá nhân và tập thể bằng lòng nhân ái, vị tha, công bằng, công tâm và hướng đến phát triển tiềm năng và hiện thực hóa nguyện vọng; làm việc chuyên nghiệp và đạo đức cũng như phục vụ và đóng góp cho cộng đồng với tư cách là một công dân có trách nhiệm.</li>
+                    </ul>
+        
+                    </p>
+                    <p> Trích từ Quyết định số 966/QĐ-ĐHCN ngày 20/7/2021 của Hiệu trưởng Trường Đại học Công nghiệp Thành phố Hồ Chí Minh
+
+                        <br> Phiên bản Tiếng Anh (English version)</p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer at the bottom -->
+    <footer>
+        <div class="footer-content">
+            <p>© Bản quyền 2015 - Đại học Công nghiệp Thành phố Hồ Chí Minh
+                <br> Mọi hành động sử dụng nội dung đăng tải trên Website iuh.edu.vn phải có sự đồng ý bằng văn bản của Đại học Công nghiệp Thành phố Hồ Chí Minh.
+                
+                </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#flip").click(function(){
+    $("#panel").toggle("slow");
+    });
+    });
+    </script>
+
+</body>
+</html>
